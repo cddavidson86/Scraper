@@ -13,14 +13,14 @@
                         <div class="panel panel-default">
                             <div class="panel-body">
                                 <p class="previousNotes"> {{this.body}}</p>
-                                <button type="button" class="btn btn-danger deleteNote" data-note-id={{this._id}} data-article-id={{this.article}}>X</button>
+                                <button type="button" class="btn btn-primary btn-sm deleteNote" data-note-id={{this._id}} data-article-id={{this.article}}>X</button>
                             </div>
                         </div>
                     {{/each}}
                 {{else}}
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <h4>No notes for this article yet.</h4>
+                            <h4></h4>
                         </div>
                     </div>
                 {{/if}}
@@ -30,7 +30,7 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary saveNote" data-id={{this._id}}>Save Note</button>
+                <button type="button" class="btn btn-primary saveNote" data-id={{this._id}}>Save A Note For Later</button>
             </div>
         </div>
     </div>
